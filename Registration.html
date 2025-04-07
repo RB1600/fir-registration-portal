@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <div class="form-container">
+    <form >
+      <h1>Registration Form</h1>
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="First Name" placeholder="Enter the First Name" required />
+
+      <label for="mname">Middle Name:</label>
+      <input type="text" id="mname" name="Middle Name" placeholder="Enter the Middle Name" required />
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="Last Name" placeholder="Enter the Last Name" required />
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="Full Name" placeholder="Enter full name" />
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="Enter the mobile number" required />
+
+     <label for="photo">Photo * (Only JPEG, JPG, PNG, under 1MB):</label>
+     <input type="file" id="photo" name="photo" accept="image/png, image/jpeg, image/jpg" required />
+
+      <label for="email">Email Id:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter strong password" required />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required />
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

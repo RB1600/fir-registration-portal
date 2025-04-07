@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIR Report</title>
+  <link rel="stylesheet" href="./report.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+
+  <h2>FIR Report</h2>
+  <button class="export-btn" onclick="exportToExcel()">Export to Excel</button>
+
+  <table id="firTable">
+    <thead>
+     <tr>
+      <th>FIR No.</th>
+      <th>Complainant</th>
+      <th>Mobile</th>
+      <th>Police Station</th>
+      <th>District</th>
+      <th>Taluka</th>
+      <th>Village</th>
+      <th>Enquiry Officer</th>
+      <th>Date & Time</th>
+      <th>Suspect</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+      <!-- FIR entries will be loaded here -->
+    </tbody>
+  </table>
+
+ <script src="./report.js"></script>
+ 
+</body>
+</html>

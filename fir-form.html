@@ -1,0 +1,119 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIR Form</title>
+  <link rel="stylesheet" href="./FIR Form.css">
+</head>
+<body>
+
+<form id="firForm">
+  <h2>FIR Registration Form</h2>
+
+  <label>State *</label>
+  <select id="state" name="state" required>
+    <option value="">Select State</option>
+  </select>
+
+  <label>District *</label>
+  <select id="district" name="district" required>
+    <option value="">Select District</option>
+  </select>
+
+  <label>Taluka *</label>
+  <select id="taluka" name="taluka" required>
+    <option value="">Select Taluka</option>
+  </select>
+
+  <label>Village *</label>
+  <select id="village" name="village" required>
+    <option value="">Select Village</option>
+  </select>
+
+  <label>Police Station *</label>
+  <select name="policestation" required>
+    <option value="">Select Station</option>
+    <option>Pune Police Station</option>
+    <option>Mumbai Central</option>
+    <option>Nagpur South</option>
+    <option>Nashik Road</option>
+  </select>
+
+  <label>ACT *</label>
+  <select name="act" required>
+    <option value="">Select IPC Section</option>
+    <option>IPC – 1860</option>
+    <option>IPC – 373</option>
+    <option>IPC – 353</option>
+    <option>IPC – 420</option>
+    <option>IPC – 302</option>
+  </select>
+
+  <label>FIR Number (Auto Generated)</label>
+  <input type="text" id="firNumber" name="firNumber" readonly>
+
+  <label>Date & Time of FIR *</label>
+  <input type="datetime-local" name="datetime" required>
+
+  <label>General Diary Reference Number *</label>
+  <input type="text" name="diary_ref" required>
+
+  <label>Type of Information *</label>
+  <select name="info_type" required>
+    <option value="">Select</option>
+    <option>Public Informed</option>
+    <option>Victim Informed</option>
+    <option>Criminal Informed</option>
+  </select>
+
+  <label>Place of Occurrence *</label>
+  <input type="text" name="place" required>
+
+  <label>Complainant / Informant Full Name *</label>
+  <input type="text" name="fullname" required>
+
+  <label>Complainant / Informant Date of Birth *</label>
+  <input type="date" name="dob" required>
+
+  <label>Complainant / Informant Nationality *</label>
+  <input type="text" name="nationality" required>
+
+  <label>Complainant / Informant Aadhaar Number *</label>
+  <input type="text" name="aadhaar" maxlength="12" pattern="\d{12}" required placeholder="Enter 12-digit Aadhaar Number">
+
+  <label>Complainant / Informant Occupation *</label>
+  <input type="text" name="occupation" required>
+
+  <label>Complainant / Informant Mobile Number *</label>
+  <input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" required placeholder="Enter 10-digit Mobile Number">
+
+  <label>Complainant / Informant Address *</label>
+  <textarea name="address" rows="3" required></textarea>
+
+  <label>Suspect Name *</label>
+  <input type="text" name="suspect" required>
+
+  <label>Suspect Address *</label>
+  <textarea name="suspect_address" rows="3" required></textarea>
+
+  <label>Enquiry Officer Name *</label>
+  <input type="text" name="enquiryofficer" required>
+
+  <label>Enquiry Officer Rank *</label>
+  <select name="officer_rank" required>
+    <option value="">Select Rank</option>
+    <option>Constable</option>
+    <option>Head Constable</option>
+    <option>ASI</option>
+    <option>PSI</option>
+    <option>API</option>
+    <option>PI</option>
+  </select>
+
+  <button type="submit">Submit FIR</button>
+</form>
+
+<script src="./FIR Form.js"></script>
+</body>
+</html>
